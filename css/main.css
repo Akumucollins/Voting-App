@@ -1,0 +1,14 @@
+input[type="checkbox"] {
+  width: 30px; /*Desired width*/
+  height: 30px; /*Desired height*/
+  cursor: pointer;
+}
+.candidate{
+    font-size: 20px;
+}
+.heading{
+    font-size: 25px;
+}
+.button{
+margin-left: 45%;
+}

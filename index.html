@@ -9,36 +9,90 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <h1>Voting App</h1>
-    <table class="table table-striped">
+    <h1 class="text-center font-weight-bold pt-5">Voting App</h1>
+    <table class="table table-striped pt-5">
         <thead>
           <tr>
-            <th scope="col">#</th>
-            <th scope="col">CandidateProfile</th>
-            <th scope="col">CandidateName</th>
-            <th scope="col">Vote</th>
+            <th scope="col" class="heading">#</th>
+            <th scope="col" class="heading">CandidateProfile</th>
+            <th scope="col" class="heading">CandidateName</th>
+            <th scope="col" class="heading">Vote</th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <th scope="row">1</th>
-            <td></td>
-            <td>Otto</td>
-            <td>@mdo</td>
+            <td><img src="images/candidate_1.jpeg" width="20%" height="185px" alt="Ps.Obama"></td>
+            <td class="candidate">Barrack Obama</td>
+            <td>
+                <form>
+                    <input type="checkbox" value="1"/>
+                </form>
+            </td>
           </tr>
           <tr>
             <th scope="row">2</th>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
+            <td><img src="images/candidate_2.jpeg" width="20%" height="185px" alt="Ps.Trump"></td>
+            <td class="candidate">Donald Trump</td>
+            <td>
+                <form>
+                    <input type="checkbox" value="2"/>
+                </form>
+            </td>
           </tr>
           <tr>
             <th scope="row">3</th>
-            <td>Larry</td>
-            <td>the Bird</td>
-            <td>@twitter</td>
+            <td><img src="images/candidate_3.jpeg" width="20%" height="185px" alt="Ps.Bush"></td>
+            <td class="candidate">George W.Bush</td>
+            <td>
+                <form>
+                    <input type="checkbox" value="3"/>
+                </form>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">4</th>
+            <td><img src="images/Kanye-West.jpg" width="20%" alt="Ps.KanyeWest"></td>
+            <td class="candidate">Kanye-West</td>
+            <td>
+                <form>
+                    <input type="checkbox" value="4"/>
+                </form>
+             </td>
+          </tr>
+          <tr>
+            <th scope="row">5</th>
+            <td><img src="images/candidate_4.jpeg" width="20%" alt="Ps.Mitchelle"></td>
+            <td class="candidate">Mitchelle Obama</td>
+            <td>
+                <form>
+                   <input type="checkbox" value="5"/>
+                </form>
+            </td>
           </tr>
         </tbody>
       </table>
+      <div class="button">
+        <button type="submit" class="btn btn-primary btn-lg" onclick="onSubmit()">Show Result</button>
+      </div>
+
+      <script src="js/jQuery.js"></script>
+      <script src="js/mdb.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/main.js"></script>
+
+      
+        <!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
+      
+        <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+        <script src="/__/firebase/7.17.2/firebase-app.js"></script>
+      
+        <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+        <script src="/__/firebase/7.17.2/firebase-analytics.js"></script>
+      
+        <!-- Add Firebase products that you want to use -->
+        <script src="/__/firebase/7.17.2/firebase-auth.js"></script>
+        <script src="/__/firebase/7.17.2/firebase-firestore.js"></script>
+      
 </body>
 </html>
