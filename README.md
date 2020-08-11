@@ -10,7 +10,7 @@
 
 ### Here is the **WebPage Screenshoot** ;
 
-![alt text](images/Screen_shot.png)
+![alt text](./images/Screen_shot.png)
 
 ---
 
