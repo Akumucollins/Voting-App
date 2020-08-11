@@ -1,53 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Voting App</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/mdb.css">
-    <link rel="stylesheet" href="css/main.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Voting App</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/mdb.css">
+  <link rel="stylesheet" href="css/main.css">
 </head>
+
 <body>
+  <div class="container-fluid bg-primary">
     <h1 class="text-center font-weight-bold pt-5">Voting App</h1>
-    <table class="table table-striped pt-5">
+    <div class="jumbotron bg-danger mt-5">
+      <table class="table table-striped">
         <thead>
           <tr>
-            <th scope="col" class="heading">#</th>
-            <th scope="col" class="heading">CandidateProfile</th>
-            <th scope="col" class="heading">CandidateName</th>
-            <th scope="col" class="heading">Vote</th>
+            <th scope="col" class="heading font-weight-bold">#</th>
+            <th scope="col" class="heading font-weight-bold">CandidateProfile</th>
+            <th scope="col" class="heading font-weight-bold">CandidateName</th>
+            <th scope="col" class="heading font-weight-bold">Vote</th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <th scope="row">1</th>
-            <td><img src="images/candidate_1.jpeg" width="20%" height="185px" alt="Ps.Obama"></td>
+            <td><img src="images/candidate_1.jpeg" width="20%" height="180px" alt="Ps.Obama"></td>
             <td class="candidate">Barrack Obama</td>
             <td>
-                <form>
-                    <input type="checkbox" value="1"/>
-                </form>
+                <input type="checkbox" name="vote" value="You've vote for Barrack Obama" />
             </td>
           </tr>
           <tr>
             <th scope="row">2</th>
-            <td><img src="images/candidate_2.jpeg" width="20%" height="185px" alt="Ps.Trump"></td>
+            <td><img src="images/candidate_2.jpeg" width="20%" height="180px" alt="Ps.Trump"></td>
             <td class="candidate">Donald Trump</td>
             <td>
-                <form>
-                    <input type="checkbox" value="2"/>
-                </form>
+              <input type="checkbox" name="vote" value="You've vote for Donald Trump" />
             </td>
           </tr>
           <tr>
             <th scope="row">3</th>
-            <td><img src="images/candidate_3.jpeg" width="20%" height="185px" alt="Ps.Bush"></td>
+            <td><img src="images/candidate_3.jpeg" width="20%" height="180px" alt="Ps.Bush"></td>
             <td class="candidate">George W.Bush</td>
             <td>
-                <form>
-                    <input type="checkbox" value="3"/>
-                </form>
+              <input type="checkbox" name="vote" value="You've vote for George W.Bush" />
             </td>
           </tr>
           <tr>
@@ -55,44 +53,42 @@
             <td><img src="images/Kanye-West.jpg" width="20%" alt="Ps.KanyeWest"></td>
             <td class="candidate">Kanye-West</td>
             <td>
-                <form>
-                    <input type="checkbox" value="4"/>
-                </form>
-             </td>
+              <input type="checkbox" name="vote" value="You've vote for Kanye-West" />
+            </td>
           </tr>
           <tr>
             <th scope="row">5</th>
             <td><img src="images/candidate_4.jpeg" width="20%" alt="Ps.Mitchelle"></td>
             <td class="candidate">Mitchelle Obama</td>
             <td>
-                <form>
-                   <input type="checkbox" value="5"/>
-                </form>
+              <input type="checkbox" name="vote" value="You've vote for Mitchelle Obama" />
             </td>
           </tr>
         </tbody>
       </table>
       <div class="button">
-        <button type="submit" class="btn btn-primary btn-lg" onclick="onSubmit()">Show Result</button>
+        <button type="submit" id="btn" class="btn btn-primary btn-lg" onclick="onSubmit()">Show Result</button>
       </div>
+    </div>
+  </div>
+  <script src="js/jQuery.js"></script>
+  <script src="js/mdb.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
 
-      <script src="js/jQuery.js"></script>
-      <script src="js/mdb.js"></script>
-      <script src="js/bootstrap.min.js"></script>
-      <script src="js/main.js"></script>
 
-      
-        <!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
-      
-        <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
-        <script src="/__/firebase/7.17.2/firebase-app.js"></script>
-      
-        <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
-        <script src="/__/firebase/7.17.2/firebase-analytics.js"></script>
-      
-        <!-- Add Firebase products that you want to use -->
-        <script src="/__/firebase/7.17.2/firebase-auth.js"></script>
-        <script src="/__/firebase/7.17.2/firebase-firestore.js"></script>
-      
+  <!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
+
+  <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+  <script src="/__/firebase/7.17.2/firebase-app.js"></script>
+
+  <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+  <script src="/__/firebase/7.17.2/firebase-analytics.js"></script>
+
+  <!-- Add Firebase products that you want to use -->
+  <script src="/__/firebase/7.17.2/firebase-auth.js"></script>
+  <script src="/__/firebase/7.17.2/firebase-firestore.js"></script>
+
 </body>
+
 </html>

@@ -1,13 +1,14 @@
-$(document).ready(function() {
-  $("form").submit(function() {
-    event.preventDefault();
-    if ($("input:checkbox:checked").length < 1) {
-      alert("Please select at least one option from above!");
-      return false;
-    }
+function getSelectedCheckboxValues(name){
+  const checkboxes = document.querySelectorAll(`input[name="${name}"]:checked`);
+  let values = [];
+  checkboxes.forEach((checkbox) => {
+      values.push(checkbox.value);
   });
+  return values;
+
+}
+
+  const btn = document.querySelector('#btn');
+  btn.addEventListener('click', (event) => {
+     alert(getSelectedCheckboxValues("vote"))
 });
-
-// function onSubmit() {
-
-// }
