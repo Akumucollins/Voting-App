@@ -1,0 +1,104 @@
+.navbar-brand{
+    font-size: 30px;
+    font-family: 'Abril Fatface', cursive;
+}
+h1{
+    font-size: 45px;
+    font-family: 'Lobster', cursive;
+}
+
+.container-fluid {
+  background-image: url("./images/makeChoice.jpeg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100vh;
+  background-size: cover;
+}
+.jumbotron {
+  background-image: url("./images/vote.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 50vh;
+  background-size: cover;
+}
+.registered {
+  padding-top: 1em;
+}
+.form-group {
+  width: 50%;
+  margin-left: 27%;
+  padding-top: 2%;
+}
+input::placeholder {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 20px;
+}
+.btn-block {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  padding-top: 1px;
+  border-color: white;
+}
+
+#rgtd {
+  visibility: hidden;
+  min-width: 250px;
+  background-color: rgb(30, 81, 235);
+  color: #000;
+  text-align: center;
+  border-radius: 2px;
+  padding: 20px;
+  position: fixed;
+  z-index: 1;
+  top: 28px;
+  font-size: 19px;
+}
+
+#rgtd.show {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+@-webkit-keyframes fadein {
+  from {
+    top: 0;
+    opacity: 0;
+  }
+  to {
+    top: 30px;
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  from {
+    top: 0;
+    opacity: 0;
+  }
+  to {
+    top: 30px;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeout {
+  from {
+    top: 30px;
+    opacity: 1;
+  }
+  to {
+    top: 0;
+    opacity: 0;
+  }
+}
+
+@keyframes fadeout {
+  from {
+    top: 30px;
+    opacity: 1;
+  }
+  to {
+    top: 0;
+    opacity: 0;
+  }
+}
