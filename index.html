@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register As A Voter</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="register.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md navbar-light bg-white">
+        <h1 href="#" class="navbar-brand text-danger text-uppercase pt-2" >Vote<span class="text-primary">Online</span></h1>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav">
+                <a href="#" class="nav-item nav-link">HOME</a>
+                <a href="#" class="nav-item nav-link">HOW IT WORKS</a>
+
+            </div>
+            <div class="navbar-nav ml-auto pt-4">
+                <a href="login.html" class="nav-item nav-link"><i class="fas fa-user fa-sm"> LOGIN</i></a>
+
+            </div>
+            <div>
+                <a href="register.html" class="nav-item nav-link">
+                    <button type="button" class="btn btn-info">REGISTER AS A VOTER</button>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <!--/ Navbar -->
+    <div class="container-fluid text-center">
+        <h1 class="pt-5 text-white font-weight-bold">Voting</h1>
+        <div class="jumbotron mt-5 bg-info">
+            <h4 class="text-primary ">Register</h4>
+            <div class="form-group">
+                <input class="form-control form-control-lg text-warning" type="text" name="username"
+                    placeholder="Full Name">
+                <input class="form-control form-control-lg text-warning" type="email" name="email"
+                    placeholder="Email Address">
+                <input class="form-control form-control-lg text-warning" type="text" name="username"
+                    placeholder="Username">
+                <input class="form-control form-control-lg text-warning" type="password" name="password"
+                    placeholder="Password">
+                <input class="form-control form-control-lg text-warning" type="password" name="password"
+                    placeholder="Confirm Password"><br>
+                <button type="submit" class="btn btn-outline-light btn-md btn-block text-danger"
+                    onclick="myFunction()">REGISTER</button>
+                <div id="rgtd" class="pl-5">Congratulations You Are Now Registered As A Voter Successfully!!</div>
+                <script>
+                    function myFunction() {
+                        var x = document.getElementById("rgtd");
+                        x.className = "show";
+                        setTimeout(function () { x.className = x.className.replace("show", ""); }, 3000);
+                    }
+                </script><br>
+                <a href="logn.html"
+                    style="text-decoration: none; font-family: 'Play', sans-serif; color: darkred; font-size: 14px;">&nbsp;CONTINUE</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
