@@ -3,6 +3,8 @@
 
 <head>
   <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lobster&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Voting App</title>
   <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -11,8 +13,33 @@
 </head>
 
 <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md navbar-light bg-white">
+      <h1 href="#" class="navbar-brand text-danger text-uppercase pt-2" >Vote<span class="text-primary">Online</span></h1>
+      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+          <div class="navbar-nav">
+              <a href="#" class="nav-item nav-link">HOME</a>
+              <a href="#" class="nav-item nav-link">HOW IT WORKS</a>
+
+          </div>
+          <div class="navbar-nav ml-auto pt-2">
+              <a href="login.html" class="nav-item nav-link"><i class="fas fa-user fa-sm"> LOGIN</i></a>
+
+          </div>
+          <div>
+              <a href="index.html" class="nav-item nav-link">
+                  <button type="button" class="btn btn-info">REGISTER AS A VOTER</button>
+              </a>
+          </div>
+      </div>
+  </nav>
+  <!--/ Navbar -->
   <div class="container-fluid bg-primary">
-    <h1 class="text-center font-weight-bold pt-5">Voting App</h1>
+    <h1 class="text-center font-weight-bold pt-5 text-white">Vote Here</h1>
     <div class="jumbotron bg-danger mt-5">
       <table class="table table-striped">
         <thead>

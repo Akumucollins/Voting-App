@@ -1,14 +1,30 @@
+.navbar-brand {
+  font-size: 30px;
+  font-family: "Abril Fatface", cursive;
+}
+h1 {
+  font-size: 45px;
+  font-family: "Lobster", cursive;
+}
+.container-fluid {
+  background-image: url("../images/makeChoice.jpeg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100vh;
+  background-size: cover;
+}
 input[type="checkbox"] {
   width: 30px; /*Desired width*/
   height: 30px; /*Desired height*/
   cursor: pointer;
 }
-.candidate{
-    font-size: 20px;
+.candidate {
+  font-size: 20px;
 }
-.heading{
-    font-size: 25px;
+.heading {
+  font-size: 25px;
 }
-.button{
-margin-left: 45%;
+.button {
+  margin-left: 45%;
 }
