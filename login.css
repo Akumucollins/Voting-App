@@ -1,0 +1,100 @@
+.navbar-brand {
+  font-size: 30px;
+  font-family: "Abril Fatface", cursive;
+}
+h1 {
+  font-size: 45px;
+  font-family: "Lobster", cursive;
+}
+
+.container-fluid {
+  background-image: url("./images/makeChoice.jpeg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100vh;
+  background-size: cover;
+}
+.row {
+  justify-content: space-between;
+  margin-left: 20px;
+}
+p {
+  font-size: 20px;
+}
+.list-group {
+  padding-top: 5px;
+  height: 50px;
+}
+.switch {
+  position: relative;
+  width: 100px;
+  height: 50px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 10%;
+  height: 10px;
+}
+
+.slider.round {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #2196f3;
+  transition: 0.4s;
+}
+
+.slider.round:before {
+  position: absolute;
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: 0.4s;
+}
+
+input:checked + .slider.round {
+  background-color: #ccc;
+}
+
+input:focus + .slider.round {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider.slider.round:before {
+  transform: translateX(90px);
+}
+.custom-switch {
+  margin-right: 80%;
+}
+
+.jumbotron {
+  background-image: url("./images/vote.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 50vh;
+  background-size: cover;
+}
+.registered {
+  padding-top: 1em;
+}
+.form-group {
+  width: 50%;
+  margin-left: 27%;
+  padding-top: 2%;
+}
+input::placeholder {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 20px;
+}
+.btn-block {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  padding-top: 1px;
+  border-color: white;
+}
