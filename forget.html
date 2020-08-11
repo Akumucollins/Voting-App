@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register As A Voter</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="forget.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md navbar-light bg-white">
+        <h1 href="#" class="navbar-brand text-danger text-uppercase pt-2">Vote<span class="text-primary">Online</span>
+        </h1>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav">
+                <a href="#" class="nav-item nav-link">HOME</a>
+                <a href="#" class="nav-item nav-link">HOW IT WORKS</a>
+
+            </div>
+            <div class="navbar-nav ml-auto pt-4">
+                <a href="login.html" class="nav-item nav-link"><i class="fas fa-user fa-sm"> LOGIN</i></a>
+
+            </div>
+            <div>
+                <a href="register.html" class="nav-item nav-link">
+                    <button type="button" class="btn btn-info">REGISTER AS A VOTER</button>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <!--/ Navbar -->
+    <div class="container-fluid text-center">
+        <h1 class="pt-5 text-white font-weight-bold">Voting</h1>
+        <div class="jumbotron mt-5 bg-info">
+            <h2 class="text-center" style="color:blue;">Forget password</h2>
+            <div class="form-group">
+                <h5 style="font-size:18px; color:red;">Enter your email that you used on your account here. We will send a link on
+                    your email to reset your password.</h5>
+                <input class="form-control form-control-lg text-dark" placeholder="Enter your email">
+                <br>
+                <button type="submit" class="btn btn-outline-light btn-md btn-block text-danger"
+                    onclick="myFunction()">Forgot Password</button><br><br>
+                <a href="login.html" class="text-uppercase text-danger" style="text-decoration:none;">continue</a><br /><br />
+
+                <div id="email">The link was successfully send on your email!!</div>
+
+                <script>
+                    function myFunction() {
+                        var x = document.getElementById("email");
+                        x.className = "show";
+                        setTimeout(function () { x.className = x.className.replace("show", ""); }, 3000);
+                    }
+                </script>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
