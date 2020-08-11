@@ -8,7 +8,7 @@ h1 {
 }
 
 .container-fluid {
-  background-image: url("./images/makeChoice.jpeg");
+  background-image: url("/images/makeChoice.jpeg");
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center;
@@ -75,7 +75,7 @@ input:checked + .slider.slider.round:before {
 }
 
 .jumbotron {
-  background-image: url("./images/vote.jpeg");
+  background-image: url("/images/vote.jpeg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 50vh;
